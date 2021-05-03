@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        
+        <script>
+            
+
+            $(document).ready(function() {
+                console.log('document is ready');
+
+                $('img').click(function(){
+                $(this).hide()
+                });
+
+                $("button").click(function(){
+                $("img").show();
+            });
+
+                
+
+/*$('img').click(function(){
+                $(this).hide();*/
+
+/*$("#show").click(function(){
+  $("p").show();
+});*/
+            });
+        </script>
+        <meta charset="UTF-8">
+        <title>about python</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+    <h1>Disappearing Ninja</h1>   
+
+    <div class="container">
+        <img src="7.png" alt="Italian Trulli">
+        <img src="3.png" alt="Italian Trulli">
+        <img src="7.png" alt="Italian Trulli">
+        <img src="3.png" alt="Italian Trulli">
+    </div>    
+    <div class="container">
+        <img src="3.png" alt="Italian Trulli">
+        <img src="7.png" alt="Italian Trulli">
+        <img src="3.png" alt="Italian Trulli">
+        <img src="7.png" alt="Italian Trulli">
+    </div> 
+    <div>
+        <button type="button">Click Me!</button>
+    </div>
+
+    </body>

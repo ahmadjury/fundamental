@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hover in-out</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+            $("img").hover(function(){
+                var x = $(this).attr("src");
+                $(this).attr("src", $(this).attr("src2"));
+                $(this).attr("src2", x);
+                
+            }, function(){
+                var x = $(this).attr("src");  
+            $(this).attr("src", $(this).attr("src2"));
+            $(this).attr("src2", x);
+            })
+            });
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <img src="img/1d1.jpg" src2= "img/1d2.jpg" alt="1d">
+            <img src="img/20d1.jfif" src2= "img/20d2.jfif" alt="1d">
+            <img src="img/50d1.jpg" src2= "img/50d2.jpg" alt="1d">
+        </div>
+
+        <div>
+            <img src="img/20sh1.png" src2= "img/20sh2.png" alt="1d">
+            <img src="img/50sh1.jpg" src2= "img/50sh2.jpg" alt="1d">
+            <img src="img/200sh1.jpg" src2= "img/200sh2.jpg" alt="1d">
+        </div>
+
+
+    </body>
+
+</html>
